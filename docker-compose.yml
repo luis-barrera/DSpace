@@ -36,6 +36,8 @@ services:
   dspacedb:
     container_name: dspacedb
     environment:
+      POSTGRES_USER: dspace
+      POSTGRES_PASSWORD: dspace
       PGDATA: /pgdata
     image: dspace/dspace-postgres-pgcrypto
     networks:
